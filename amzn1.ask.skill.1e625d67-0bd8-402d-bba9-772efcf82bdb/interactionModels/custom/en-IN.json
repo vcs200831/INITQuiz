@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "init quiz",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "howdy",
+            "hola ",
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "RandomFactIntent",
+          "slots": [],
+          "samples": [
+            "fact of the day",
+            "say a fact",
+            "i need a fact",
+            "i want a fact",
+            "fact about something ",
+            "fact",
+            "give me a random fact",
+            "Give me a fact please",
+            "Tell me a random fact"
+          ]
+        },
+        {
+          "name": "SpecificFactIntent",
+          "slots": [
+            {
+              "name": "FactType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "i want information about {FactType}",
+            "i want to know about {FactType}",
+            "tell me about {FactType}",
+            "give me a fact about {FactType}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "software development jobs"
+              }
+            },
+            {
+              "name": {
+                "value": "water"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuvette"
+              }
+            },
+            {
+              "name": {
+                "value": "MLH"
+              }
+            },
+            {
+              "name": {
+                "value": "pizza"
+              }
+            }
+          ],
+          "name": "FactType"
+        }
+      ]
+    }
+  },
+  "version": "6"
+}
